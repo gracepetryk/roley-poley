@@ -1,0 +1,10 @@
+.select-flexbox {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  max-height: 2em;
+  margin-right: 1em;
+  float: left;
+}

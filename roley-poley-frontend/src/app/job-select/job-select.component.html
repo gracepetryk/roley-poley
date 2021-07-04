@@ -1,0 +1,14 @@
+<mat-form-field>
+  <mat-select [formControl]="jobSelect" placeholder="Pick a Job">
+    <mat-select-trigger *ngIf="jobSelect.value">
+      <div class="select-flexbox">
+        <img class="selected-image" src={{jobSelect.value.icon}}> {{jobSelect.value.short_name}}
+      </div>
+    </mat-select-trigger>
+    <mat-option *ngFor="let job of jobs" [value]="job">
+      <div class="select-flexbox">
+        <img class="drop-down-image" src={{job.icon}}> {{job.short_name}}
+      </div>
+    </mat-option>
+  </mat-select>
+</mat-form-field>

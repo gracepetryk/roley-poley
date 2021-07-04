@@ -1,0 +1,7 @@
+table {
+  width: 40%;
+  margin-left: 20px
+}
+tr:hover {
+  background: whitesmoke;
+}
