@@ -11,6 +11,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { JobSelectComponent } from './job-select/job-select.component';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { JobSelectComponent } from './job-select/job-select.component';
     JobSelectComponent
   ],
   imports: [
+    NgxMatSelectSearchModule,
+    MatAutocompleteModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatFormFieldModule,

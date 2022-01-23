@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { Job } from '../types'
 import _jobs  from '../../assets/jobs.json';
 import { FormControl } from '@angular/forms';
+import { Observable } from 'rxjs';
+import {startWith, map} from 'rxjs/operators'
+import { JobSelect } from '../player-input/player-input.component';
 
 @Component({
   selector: 'app-job-select',
@@ -10,16 +13,39 @@ import { FormControl } from '@angular/forms';
 })
 export class JobSelectComponent implements OnInit {
 
-  constructor() { }
-  jobs: Job[] = _jobs
+  jobs: Job[] = _jobs;
+  jobFormControl = new FormControl();
+  jobFilterControl = new FormControl();
+  filteredJobs: Observable<Job[]>;
 
-  jobSelect = new FormControl();
+  @Input() id!: JobSelect;
+  @Output() jobSelectEvent = new EventEmitter<JobSelect>();
 
-  selected_jobs: Job[] = []
+  constructor() {
+    this.filteredJobs = this.jobFilterControl.valueChanges.pipe(
+      startWith(''),
+      map(job => (job ? this._filterJobs(job) : this.jobs))
+    )
 
-  ngOnInit() {
-    this.jobs.forEach(job => {
-      job.icon = "../../assets/" + job.icon
-    });
+    this.jobFormControl.valueChanges.subscribe(
+      (job: string) => {
+        console.log(job)
+        this.jobSelectEvent.emit(this.id)
+      }
+    )
+  }
+
+  private _filterJobs(value: string): Job[] {
+    const filterValue = value.toUpperCase()
+
+    return this.jobs.filter(job => job.short_name.startsWith(filterValue))
+  }
+
+  disp_job(job: Job): string {
+    return job.short_name
+  }
+
+  ngOnInit(): void {
+      
   }
 }

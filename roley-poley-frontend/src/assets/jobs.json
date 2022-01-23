@@ -3,112 +3,112 @@
     "name": "Paladin",
     "short_name": "PLD",
     "role": "Tank",
-    "icon": "job_icons/pld.png"
+    "icon": "assets/job_icons/pld.png"
   },
   {
     "name": "Warrior",
     "short_name": "WAR",
     "role": "Tank",
-    "icon": "job_icons/war.png"
+    "icon": "assets/job_icons/war.png"
   },
   {
     "name": "Dark Night",
     "short_name": "DRK",
     "role": "Tank",
-    "icon": "job_icons/drk.png"
+    "icon": "assets/job_icons/drk.png"
   },
   {
     "name": "Gunbreaker",
     "short_name": "GNB",
     "role": "Tank",
-    "icon":"job_icons/gnb.png"
+    "icon":"assets/job_icons/gnb.png"
   },
   {
     "name": "White Mage",
     "short_name": "WHM",
     "role": "Healer",
-    "icon": "job_icons/whm.png"
+    "icon": "assets/job_icons/whm.png"
   },
   {
     "name": "Scholar",
     "short_name": "SCH",
     "role": "Healer",
-    "icon":"job_icons/sch.png"
+    "icon":"assets/job_icons/sch.png"
   },
   {
     "name": "Astrologian",
     "short_name": "AST",
     "role": "Healer",
-    "icon": "job_icons/ast.png"
+    "icon": "assets/job_icons/ast.png"
   },
   {
     "name": "Monk",
     "short_name": "MNK",
     "role": "DPS",
     "subrole": "Melee",
-    "icon":"job_icons/mnk.png"
+    "icon":"assets/job_icons/mnk.png"
   },
   {
     "name": "Dragoon",
     "short_name": "DRG",
     "role": "DPS",
     "subrole": "Melee",
-    "icon": "job_icons/drg.png"
+    "icon": "assets/job_icons/drg.png"
   },
   {
     "name": "Ninja",
     "short_name": "NIN",
     "role": "DPS",
     "subrole": "Melee",
-    "icon":"job_icons/nin.png"
+    "icon":"assets/job_icons/nin.png"
   },
   {
     "name": "Samurai",
     "short_name": "SAM",
     "role": "DPS",
     "subrole": "Melee",
-    "icon": "job_icons/sam.png"
+    "icon": "assets/job_icons/sam.png"
   },
   {
     "name": "Bard",
     "short_name": "BRD",
     "role": "DPS",
     "subrole": "Ranged",
-    "icon": "job_icons/brd.png"
+    "icon": "assets/job_icons/brd.png"
   },
   {
     "name": "Machinist",
     "short_name": "MCH",
     "role": "DPS",
     "subrole": "Ranged",
-    "icon": "job_icons/mch.png"
+    "icon": "assets/job_icons/mch.png"
   },
   {
     "name": "Dancer",
     "short_name": "DNC",
     "role": "DPS",
     "subrole": "Ranged",
-    "icon": "job_icons/dnc.png"
+    "icon": "assets/job_icons/dnc.png"
   },
   {
     "name": "Black Mage",
     "short_name": "BLM",
     "role":"DPS",
     "subrole": "Ranged",
-    "icon":"job_icons/blm.png"
+    "icon":"assets/job_icons/blm.png"
   },
   {
     "name": "Summoner",
     "short_name": "SMN",
     "role": "DPS",
     "subrole": "Ranged",
-    "icon": "job_icons/smn.png"
+    "icon": "assets/job_icons/smn.png"
   },
   {
     "name":"Red Mage",
     "short_name": "RDM",
     "role": "DPS",
     "subrole": "Ranged",
-    "icon": "job_icons/rdm.png"
+    "icon": "assets/job_icons/rdm.png"
   }
 ]

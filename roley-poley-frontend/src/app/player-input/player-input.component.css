@@ -1,4 +1,17 @@
+
+
+.job-dropdown {
+  padding-left: 10px;
+}
+
+.job-input {
+  display: flex;
+  align-items: baseline;
+  padding: 10px;
+  width: min-content;
+}
+
 mat-card {
   display: flex;
-  margin: 1rem;
+  align-items: center;
 }

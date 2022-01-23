@@ -1,7 +1,10 @@
-<mat-card>
-  <mat-form-field appearance="outline">
-    <mat-label>Name</mat-label>
-    <input matInput placeholder="Name">
-  </mat-form-field>
-  <app-job-select></app-job-select>
-</mat-card>
+<div class=job-input>
+    <span class="material-icons">remove</span>
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Name">
+    </mat-form-field>
+    <span class=job-dropdown>
+      <app-job-select></app-job-select>
+    </span>
+</div>

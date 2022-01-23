@@ -1,10 +1,12 @@
-.select-flexbox {
-  display: flex;
-  align-items: center;
+.dropdown-image {
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
-img {
-  max-height: 2em;
-  margin-right: 1em;
-  float: left;
+.dropdown-ff{
+  width: 136px;
+}
+
+.search-option {
+  width: 136px
 }
