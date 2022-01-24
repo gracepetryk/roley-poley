@@ -4,7 +4,12 @@
       <mat-label>Name</mat-label>
       <input matInput placeholder="Name">
     </mat-form-field>
-    <span class=job-dropdown>
-      <app-job-select></app-job-select>
+    <span class="pref-level" *ngFor="pref_level of job_choices; index as pref_index">
+      <div class="job-dropdown" *ngFor="job_choice of job_choices[pref_index]; index as index">
+        <app-job-select [id]=job_choices[pref_index][index]
+                        [already_selected_observable]="already_selected_observable"
+                        (jobChange)="onJobChange($event)">
+        </app-job-select>
+      </div>
     </span>
 </div>

@@ -1,7 +1,7 @@
 <mat-form-field class="dropdown-ff">
   <mat-select [formControl]="jobFormControl" placeholder="Select a Job" #singleSelect>
 
-    <mat-select-trigger *ngIf="jobFormControl.value">
+    <mat-select-trigger *ngIf="id.job">
       <img class="dropdown-image" src={{jobFormControl.value.icon}} height="25px">
       <span> {{jobFormControl.value.short_name}} </span>
     </mat-select-trigger>
